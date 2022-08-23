@@ -1,0 +1,198 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    display: flex;
+}
+
+.header__photo {
+    background-image: url(../images/desktop-image-hero-1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    font-family: 'League Spartan', sans-serif;
+    color: aliceblue;
+    padding: 10px;
+    width: 100%;
+}
+
+.header__icon {
+    visibility:hidden;
+}
+
+.room__photo {
+    visibility: hidden;
+}
+
+.header__space {
+    margin-top: 20rem;
+}
+
+.photo__unorder {
+    display: flex;
+}
+
+.list__h1 {
+    margin: 20px;
+}
+
+
+.list__item {
+    list-style: none;
+    margin: 30px;
+}
+
+.discover {
+    padding: 10px;
+    text-align: center;
+    margin: 20px;
+    font-family: 'League Spartan', sans-serif;
+    width: 40%;
+}
+
+.discover__h1 {
+    padding: .5rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.discover__p {
+    padding: 10px;
+    text-align: center;
+}
+
+.discover__shop {
+    letter-spacing: 10px;
+    margin-top: 2rem;
+}
+
+.discover__photo {
+    margin-top: 10rem;
+    margin-right: 10rem;
+}
+
+.discover__picture--1 {
+    background-color:hsl(0, 0%, 0%) ;
+    padding: 20px;
+}
+
+.discover__picture--2 {
+    background-color:hsl(0, 0%, 63%) ;
+    padding: 20px;
+}
+
+.footer {
+    display: flex;
+}
+
+.footer__text {
+    width: 40%;
+    text-align: center;
+    padding: 20px;
+    font-family: 'League Spartan', sans-serif;
+}
+
+.footer__photo--1 {
+    width: 30%;
+}
+
+.footer__photo--2 {
+    width: 30%;
+}
+
+.image-about-dark {
+    width: 100%;
+}
+
+.image-about-light {
+    width: 100%;
+}
+
+.text__h1 {
+    padding: 7px;
+    text-align: left;
+}
+
+.text__p {
+    padding: 2px;
+}
+
+
+@media  only screen and (max-width: 900px) {
+
+    .header {
+        flex-direction: column;
+    }
+
+    .list__item {
+        visibility: hidden;
+    }
+     
+    .header__icon {
+        visibility: visible;
+    }
+
+    .room__photo {
+        visibility: visible;
+        margin-top: 20rem;
+        margin-left: 36rem;
+        background-color: hsl(0, 0%, 0%);
+    }
+    
+    .header__container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .room__picture--1 {
+        padding: 20px;
+    }
+
+    .room__picture--2 {
+        padding: 20px;
+    }
+
+    .header__icon {
+        margin-top: 23px;
+    }
+
+    .discover {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .discover__h1 {
+        font-weight: 900;
+        font-size: 40px;
+    }
+
+    .discover__p {
+        font-weight: 400;
+        font-size: 20px;
+    }
+    .discover__shop {
+        margin-top: 40px;
+        font-weight: 600;
+    }
+
+    .discover__photo {
+        visibility: hidden;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+
+    .footer__photo--1 {
+        width: 100%;
+    }
+    
+    .footer__photo--2 {
+        width: 100%;
+    }
+
+    .footer__text {
+        width: 100%;
+    }
+}
